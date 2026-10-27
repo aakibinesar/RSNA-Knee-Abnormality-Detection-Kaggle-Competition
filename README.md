@@ -58,6 +58,7 @@ Laterality check: only about half of the studies carry a laterality tag. Out-of-
 - Gold-58 is too small to separate models that differ by less than about 0.02.
 - I did not reproduce the strongest public recipes (larger pretrained backbones at 384 px with per-finding heads). The top public notebooks combine other participants' trained weights; I did not use those.
 - Untested ideas: a larger pretrained backbone, teacher-student relabelling from out-of-fold predictions, more windows per study.
+- Compute: all training ran on Kaggle's free tier (a weekly quota of about 30 GPU hours, T4 GPUs). One fold took about 65 minutes for ResNet-50, about 80 minutes for ConvNeXt-tiny and about 4 hours for ConvNeXt-tiny at 384 px, which is why the 384 px and mirror-augmentation tests were run on two folds only and why I kept the models at 224 px with no test-time augmentation. Larger backbones and longer schedules were not tried.
 
 ## 8. Repository layout
 | folder | content |
