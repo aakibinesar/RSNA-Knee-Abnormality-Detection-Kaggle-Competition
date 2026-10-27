@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+scikit-learn
+pydicom
+opencv-python-headless
+torch
+torchvision
+transformers
+pytest
